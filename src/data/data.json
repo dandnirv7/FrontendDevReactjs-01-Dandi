@@ -1,0 +1,604 @@
+{
+  "restaurants": [
+    {
+      "restaurant_name": "Bistro Delight",
+      "rating": 4.5,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Italian",
+      "categories": ["Italian", "European"],
+      "photos": [
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnowjakarta.co.id%2Fthe-best-italian-restaurants-in-jakarta%2F&psig=AOvVaw3iF39NoI9pv3mFBZetrhaV&ust=1731222195190000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD55bHXzokDFQAAAAAdAAAAABAE",
+        "https://images.unsplash.com/photo-1519380464764-d40f93f4ca94"
+      ],
+      "id": "bistro-delight-001",
+      "location": {
+        "address": "123 Delicious St, Food City",
+        "latitude": 40.712776,
+        "longitude": -74.005974
+      },
+      "reviews": [
+        {
+          "name": "John Doe",
+          "rating": 5,
+          "text": "Fantastic food and great atmosphere! Highly recommended."
+        },
+        {
+          "name": "Jane Smith",
+          "rating": 4,
+          "text": "Good food but service was a little slow."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Sushi World",
+      "rating": 3.5,
+      "price_range": "$$$",
+      "open_now": false,
+      "cuisine": "Japanese",
+      "categories": ["Sushi", "Japanese"],
+      "photos": [
+        "https://images.unsplash.com/photo-1617221547037-fb62a85b05ff",
+        "https://images.unsplash.com/photo-1562024994-cd9bfc59ff64"
+      ],
+      "id": "sushi-world-002",
+      "location": {
+        "address": "456 Sushi Ave, Tokyo Town",
+        "latitude": 35.689487,
+        "longitude": 139.691711
+      },
+      "reviews": [
+        {
+          "name": "Alice Johnson",
+          "rating": 5,
+          "text": "The sushi here is out of this world. Super fresh and tasty!"
+        },
+        {
+          "name": "Bob Brown",
+          "rating": 3,
+          "text": "Good sushi, but the place was a bit crowded."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Café de Paris",
+      "rating": 4.8,
+      "price_range": "$$$$",
+      "open_now": true,
+      "cuisine": "French",
+      "categories": ["French", "Bistro"],
+      "photos": [
+        "https://images.unsplash.com/photo-1600971223485-e55a1d8a50d4",
+        "https://images.unsplash.com/photo-1582546850621-e60d933f93b9"
+      ],
+      "id": "cafe-de-paris-003",
+      "location": {
+        "address": "789 Elegant Rd, Parisian District",
+        "latitude": 48.856613,
+        "longitude": 2.352222
+      },
+      "reviews": [
+        {
+          "name": "Chloe Leblanc",
+          "rating": 5,
+          "text": "An authentic French experience. The food was superb!"
+        },
+        {
+          "name": "Marc Dupont",
+          "rating": 4,
+          "text": "Very elegant setting. Food was great, but a bit overpriced."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Taco Haven",
+      "rating": 4.3,
+      "price_range": "$",
+      "open_now": true,
+      "cuisine": "Mexican",
+      "categories": ["Tacos", "Mexican"],
+      "photos": [
+        "https://images.unsplash.com/photo-1601025097297-207d07b2f40e",
+        "https://images.unsplash.com/photo-1594735811174-3f9a91d67f77"
+      ],
+      "id": "taco-haven-004",
+      "location": {
+        "address": "234 Fiesta Blvd, Taco Town",
+        "latitude": 33.448376,
+        "longitude": -112.074036
+      },
+      "reviews": [
+        {
+          "name": "Carlos Rivera",
+          "rating": 5,
+          "text": "Best tacos I've ever had! Great variety and spicy options."
+        },
+        {
+          "name": "Marta Flores",
+          "rating": 4,
+          "text": "Delicious food, but the place is always packed."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Pasta Paradise",
+      "rating": 4.6,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Italian",
+      "categories": ["Pasta", "Italian"],
+      "photos": [
+        "https://images.unsplash.com/photo-1571035502551-5f4c6dcb2128",
+        "https://images.unsplash.com/photo-1589182347099-2f6982ec8db0"
+      ],
+      "id": "pasta-paradise-005",
+      "location": {
+        "address": "678 Noodle St, Pasta City",
+        "latitude": 40.741895,
+        "longitude": -73.989308
+      },
+      "reviews": [
+        {
+          "name": "Francesca Rossi",
+          "rating": 5,
+          "text": "Amazing pasta! The best I've ever tasted."
+        },
+        {
+          "name": "Giovanni Bianchi",
+          "rating": 4,
+          "text": "Great flavors but the portions could be bigger."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "The Burger Joint",
+      "rating": 4.1,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "American",
+      "categories": ["Burgers", "American"],
+      "photos": [
+        "https://images.unsplash.com/photo-1584730189170-5e62f89d2c7e",
+        "https://images.unsplash.com/photo-1572404634430-f2be2e3a0560"
+      ],
+      "id": "the-burger-joint-006",
+      "location": {
+        "address": "123 Burger Rd, Grill City",
+        "latitude": 34.052235,
+        "longitude": -118.243683
+      },
+      "reviews": [
+        {
+          "name": "Emma White",
+          "rating": 4,
+          "text": "Great burgers, but the fries could be crispier."
+        },
+        {
+          "name": "Liam Green",
+          "rating": 4,
+          "text": "Good quality burgers, friendly staff."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Saffron Spice",
+      "rating": 4.7,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Indian",
+      "categories": ["Indian", "Spicy"],
+      "photos": [
+        "https://images.unsplash.com/photo-1557887172-4e042d8c8bfe",
+        "https://images.unsplash.com/photo-1587980963156-bf1ad410230f"
+      ],
+      "id": "saffron-spice-007",
+      "location": {
+        "address": "890 Curry Ln, Spice Town",
+        "latitude": 28.70406,
+        "longitude": 77.102493
+      },
+      "reviews": [
+        {
+          "name": "Rahul Patel",
+          "rating": 5,
+          "text": "Authentic Indian food with amazing spices!"
+        },
+        {
+          "name": "Priya Desai",
+          "rating": 4,
+          "text": "Very flavorful, but a bit too spicy for me."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Dragon Wok",
+      "rating": 4.4,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Chinese",
+      "categories": ["Chinese", "Asian"],
+      "photos": [
+        "https://images.unsplash.com/photo-1512152272829-e3139592d56f",
+        "https://images.unsplash.com/photo-1526318896980-cf78c088247c"
+      ],
+      "id": "dragon-wok-008",
+      "location": {
+        "address": "567 Dragon St, Chinatown",
+        "latitude": 37.794138,
+        "longitude": -122.407791
+      },
+      "reviews": [
+        {
+          "name": "Wei Chen",
+          "rating": 5,
+          "text": "Authentic Chinese cuisine with great flavors!"
+        },
+        {
+          "name": "Linda Liu",
+          "rating": 4,
+          "text": "Delicious dim sum but weekend wait times are long."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Mediterranean Oasis",
+      "rating": 4.6,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Mediterranean",
+      "categories": ["Mediterranean", "Greek"],
+      "photos": [
+        "https://images.unsplash.com/photo-1523986371872-9d3ba2e2a389",
+        "https://images.unsplash.com/photo-1540914124281-342587941389"
+      ],
+      "id": "mediterranean-oasis-009",
+      "location": {
+        "address": "321 Olive Way, Med City",
+        "latitude": 37.98381,
+        "longitude": 23.727539
+      },
+      "reviews": [
+        {
+          "name": "George Papadopoulos",
+          "rating": 5,
+          "text": "Best hummus in town! Great Mediterranean atmosphere."
+        },
+        {
+          "name": "Sofia Stavros",
+          "rating": 4,
+          "text": "Excellent food but service could be faster."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "BBQ Kings",
+      "rating": 4.5,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "BBQ",
+      "categories": ["BBQ", "American"],
+      "photos": [
+        "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
+        "https://images.unsplash.com/photo-1529193591184-7c3a5b084268"
+      ],
+      "id": "bbq-kings-010",
+      "location": {
+        "address": "789 Smoke St, BBQ City",
+        "latitude": 35.227087,
+        "longitude": -80.843127
+      },
+      "reviews": [
+        {
+          "name": "Mike Johnson",
+          "rating": 5,
+          "text": "Best ribs I've ever had! Amazing sauce selection."
+        },
+        {
+          "name": "Sarah Williams",
+          "rating": 4,
+          "text": "Great meat, but sides could be better."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Thai Orchid",
+      "rating": 4.3,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Thai",
+      "categories": ["Thai", "Asian"],
+      "photos": [
+        "https://images.unsplash.com/photo-1559314809-0d155014e29e",
+        "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4"
+      ],
+      "id": "thai-orchid-011",
+      "location": {
+        "address": "456 Spice Lane, Thai Town",
+        "latitude": 13.756331,
+        "longitude": 100.501765
+      },
+      "reviews": [
+        {
+          "name": "Tom Wilson",
+          "rating": 4,
+          "text": "Authentic Thai flavors, good portion sizes."
+        },
+        {
+          "name": "Lisa Chang",
+          "rating": 5,
+          "text": "Best Pad Thai in the city!"
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Seafood Harbor",
+      "rating": 4.7,
+      "price_range": "$$$",
+      "open_now": true,
+      "cuisine": "Seafood",
+      "categories": ["Seafood", "American"],
+      "photos": [
+        "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62",
+        "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+      ],
+      "id": "seafood-harbor-012",
+      "location": {
+        "address": "234 Harbor Dr, Coast City",
+        "latitude": 37.808674,
+        "longitude": -122.409821
+      },
+      "reviews": [
+        {
+          "name": "David Lee",
+          "rating": 5,
+          "text": "Fresh seafood and excellent preparation!"
+        },
+        {
+          "name": "Mary Johnson",
+          "rating": 4,
+          "text": "Great view and good food, but pricey."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Veggie Paradise",
+      "rating": 4.6,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Vegetarian",
+      "categories": ["Vegetarian", "Healthy"],
+      "photos": [
+        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+        "https://images.unsplash.com/photo-1543339308-43e59d6b73a6"
+      ],
+      "id": "veggie-paradise-013",
+      "location": {
+        "address": "567 Green St, Healthy Town",
+        "latitude": 40.73061,
+        "longitude": -73.935242
+      },
+      "reviews": [
+        {
+          "name": "Emily Green",
+          "rating": 5,
+          "text": "Amazing vegetarian options! So creative!"
+        },
+        {
+          "name": "James Wilson",
+          "rating": 4,
+          "text": "Healthy and delicious, but limited parking."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "The Steakhouse",
+      "rating": 4.8,
+      "price_range": "$$$$",
+      "open_now": true,
+      "cuisine": "Steakhouse",
+      "categories": ["Steakhouse", "American"],
+      "photos": [
+        "https://images.unsplash.com/photo-1544025162-d76694265947",
+        "https://images.unsplash.com/photo-1558030006-450675393462"
+      ],
+      "id": "the-steakhouse-014",
+      "location": {
+        "address": "789 Beef Avenue, Steak City",
+        "latitude": 40.712776,
+        "longitude": -74.005974
+      },
+      "reviews": [
+        {
+          "name": "Robert Wilson",
+          "rating": 5,
+          "text": "Best ribeye I've ever had! Worth every penny."
+        },
+        {
+          "name": "Patricia Brown",
+          "rating": 5,
+          "text": "Exceptional service and perfectly cooked steaks."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Seoul Kitchen",
+      "rating": 4.5,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Korean",
+      "categories": ["Korean", "Asian"],
+      "photos": [
+        "https://images.unsplash.com/photo-1498654896293-37aacf113fd9",
+        "https://images.unsplash.com/photo-1550388342-b3fd986e4e67"
+      ],
+      "id": "seoul-kitchen-015",
+      "location": {
+        "address": "456 K-Town Road, Seoul District",
+        "latitude": 37.566535,
+        "longitude": 126.977969
+      },
+      "reviews": [
+        {
+          "name": "Jin Park",
+          "rating": 5,
+          "text": "Authentic Korean BBQ experience! Great banchan selection."
+        },
+        {
+          "name": "Michelle Lee",
+          "rating": 4,
+          "text": "Delicious food but can get quite crowded on weekends."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "The Breakfast Club",
+      "rating": 4.6,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Breakfast",
+      "categories": ["Breakfast", "American", "Brunch"],
+      "photos": [
+        "https://images.unsplash.com/photo-1550547660-d9450f859349",
+        "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      ],
+      "id": "breakfast-club-016",
+      "location": {
+        "address": "123 Morning Ave, Sunrise City",
+        "latitude": 34.052234,
+        "longitude": -118.243685
+      },
+      "reviews": [
+        {
+          "name": "Sarah Thompson",
+          "rating": 5,
+          "text": "Best breakfast in town! Amazing pancakes."
+        },
+        {
+          "name": "Michael Rodriguez",
+          "rating": 4,
+          "text": "Great food but long wait times on weekends."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Mediterranean Nights",
+      "rating": 4.7,
+      "price_range": "$$$",
+      "open_now": true,
+      "cuisine": "Lebanese",
+      "categories": ["Lebanese", "Mediterranean"],
+      "photos": [
+        "https://images.unsplash.com/photo-1550547660-d9450f859349",
+        "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      ],
+      "id": "mediterranean-nights-017",
+      "location": {
+        "address": "567 Cedar Lane, Lebanese Quarter",
+        "latitude": 33.88863,
+        "longitude": 35.495479
+      },
+      "reviews": [
+        {
+          "name": "Hassan Abboud",
+          "rating": 5,
+          "text": "Authentic Lebanese cuisine! Amazing mezze platter."
+        },
+        {
+          "name": "Zeinab Khalil",
+          "rating": 4,
+          "text": "Great atmosphere and delicious food."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Ramen House",
+      "rating": 4.4,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Japanese",
+      "categories": ["Ramen", "Japanese"],
+      "photos": [
+        "https://images.unsplash.com/photo-1557872943-16a5ac26437e",
+        "https://images.unsplash.com/photo-1557872943-16a5ac26437e"
+      ],
+      "id": "ramen-house-018",
+      "location": {
+        "address": "890 Noodle Street, Ramen District",
+        "latitude": 35.652832,
+        "longitude": 139.839478
+      },
+      "reviews": [
+        {
+          "name": "Ken Tanaka",
+          "rating": 5,
+          "text": "Best tonkotsu ramen in the city!"
+        },
+        {
+          "name": "Amy Wong",
+          "rating": 4,
+          "text": "Authentic Japanese ramen experience."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "The Wine Bar",
+      "rating": 4.9,
+      "price_range": "$$$",
+      "open_now": true,
+      "cuisine": "Wine Bar",
+      "categories": ["Wine", "Tapas", "European"],
+      "photos": [
+        "https://images.unsplash.com/photo-1550547660-d9450f859349",
+        "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      ],
+      "id": "wine-bar-019",
+      "location": {
+        "address": "123 Vine Street, Wine District",
+        "latitude": 40.712775,
+        "longitude": -74.005973
+      },
+      "reviews": [
+        {
+          "name": "William Scott",
+          "rating": 5,
+          "text": "Excellent wine selection and perfect tapas!"
+        },
+        {
+          "name": "Elizabeth Parker",
+          "rating": 5,
+          "text": "Sophisticated atmosphere and knowledgeable staff."
+        }
+      ]
+    },
+    {
+      "restaurant_name": "Island Poke",
+      "rating": 4.3,
+      "price_range": "$$",
+      "open_now": true,
+      "cuisine": "Hawaiian",
+      "categories": ["Poke", "Hawaiian", "Seafood"],
+      "photos": [
+        "https://images.unsplash.com/photo-1550547660-d9450f859349",
+        "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      ],
+      "id": "island-poke-020",
+      "location": {
+        "address": "456 Beach Road, Hawaiian Quarter",
+        "latitude": 21.306944,
+        "longitude": -157.858337
+      },
+      "reviews": [
+        {
+          "name": "Kai Kalani",
+          "rating": 4,
+          "text": "Fresh poke bowls with great variety!"
+        },
+        {
+          "name": "Luna Silva",
+          "rating": 5,
+          "text": "Best Hawaiian food outside of Hawaii!"
+        }
+      ]
+    }
+  ]
+}
