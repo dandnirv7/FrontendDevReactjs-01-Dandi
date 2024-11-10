@@ -1,8 +1,15 @@
 import React, { useState } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Home from "@/pages/Home";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
 import Login from "@/components/Login";
 import ProtectedRoute from "@/components/ProtectedRoute";
+import Home from "@/pages/Home";
+import { RestaurantDetail } from "./pages/Restaurant";
+import NotFound from "./pages/NotFound";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
@@ -10,6 +17,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route
           path="/"
           element={<Login setIsAuthenticated={setIsAuthenticated} />}
@@ -22,6 +30,10 @@ const App: React.FC = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="restaurant" element={<Outlet></Outlet>}>
+          <Route index element={<NotFound />} />
+          <Route path=":restaurantId" element={<RestaurantDetail />}></Route>
+        </Route>
       </Routes>
     </Router>
   );
