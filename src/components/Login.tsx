@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Input } from "./ui/input";
+import { z } from "zod";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+
+const loginSchema = z.object({
+  username: z.string().min(1, { message: "Username is required" }),
+  password: z
+    .string()
+    .min(1, { message: "Password is required" })
+    .regex(/^\S*$/, { message: "Password cannot contain spaces" }),
+});
 
 interface LoginProps {
   setIsAuthenticated: (isAuthenticated: boolean) => void;
@@ -18,42 +27,56 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === dummyUsername && password === dummyPassword) {
-      setIsAuthenticated(true);
-      navigate("/home");
+
+    const result = loginSchema.safeParse({ username, password });
+    if (result.success) {
+      if (username === dummyUsername && password === dummyPassword) {
+        setIsAuthenticated(true);
+        navigate("/home");
+      } else {
+        setMessage("Incorrect username or password");
+      }
     } else {
-      setMessage("Login Gagal");
+      setMessage(result.error.errors.map((err) => err.message).join(", "));
     }
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form
-        onSubmit={handleLogin}
-        className="bg-[#e6e6e6] p-8 rounded-xl flex flex-col gap-5"
-      >
-        <h2>Login</h2>
-        <div className="flex flex-row gap-2 items-center justify-center">
-          <Input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="username"
-            required
-          />
-        </div>
-        <div className="flex flex-row gap-2 items-center justify-center">
-          <Input
-            type="password"
-            placeholder="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <Button type="submit">Login</Button>
-        <p className="text-center text-red-500 text-xs">{message}</p>
-      </form>
+    <div className="flex items-center justify-center min-h-screen bg-[#e6e6e6]">
+      <div className="w-full max-w-sm p-10 bg-white shadow-xl rounded-xl">
+        <h2 className="mb-8 text-3xl font-semibold text-center text-gray-800">
+          Login
+        </h2>
+        <form onSubmit={handleLogin} className="flex flex-col gap-6">
+          <div>
+            <Input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Username"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#002b56]"
+            />
+          </div>
+          <div>
+            <Input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#002b56]"
+            />
+          </div>
+          <Button
+            type="submit"
+            className="w-full py-3 text-white bg-[#002b56] rounded-lg hover:bg-[#001f3e] focus:ring-2 focus:ring-[#00142c]"
+          >
+            Login
+          </Button>
+          {message && (
+            <p className="mt-2 text-xs text-center text-red-500">{message}</p>
+          )}
+        </form>
+      </div>
     </div>
   );
 };
