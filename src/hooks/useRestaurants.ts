@@ -35,7 +35,10 @@ const useRestaurants = () => {
       }
 
       setFilteredRestaurants(filtered);
-      setRestaurants(filtered.slice(0, 8));
+
+      const initialRestaurants = filtered.slice(0, 8);
+      setRestaurants(initialRestaurants);
+
       setHasMore(filtered.length > 8);
     };
 
@@ -44,12 +47,20 @@ const useRestaurants = () => {
 
   const loadMoreRestaurants = () => {
     const nextRestaurants = filteredRestaurants.slice(page * 8, (page + 1) * 8);
+
+    if (nextRestaurants.length === 0) {
+      setHasMore(false);
+      return;
+    }
+
     setRestaurants((prevRestaurants) => [
       ...prevRestaurants,
       ...nextRestaurants,
     ]);
+
     setPage((prevPage) => prevPage + 1);
-    setHasMore(nextRestaurants.length > 0);
+
+    setHasMore(filteredRestaurants.length > (page + 1) * 8);
   };
 
   const handleOpenNowChange = (e: React.ChangeEvent<HTMLInputElement>) => {

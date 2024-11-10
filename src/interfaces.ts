@@ -9,6 +9,7 @@ export interface Restaurant {
   id: string;
   location: Location;
   reviews: Review[];
+  menu: Menu;
 }
 
 export interface Location {
@@ -18,7 +19,21 @@ export interface Location {
 }
 
 export interface Review {
+  id: string;
   name: string;
   rating: number;
   text: string;
+  profile_path: string;
+  pictures: string[];
+}
+
+export interface Menu {
+  food: MenuItem[];
+  drinks: MenuItem[];
+}
+
+export interface MenuItem {
+  name: string;
+  description: string;
+  price: string;
 }

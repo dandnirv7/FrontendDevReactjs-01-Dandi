@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import FilterBar from "@/components/FilterBar";
 import RestaurantList from "@/components/RestaurantList";
 import useRestaurants from "@/hooks/useRestaurants";
+import data from "@/data/data.json";
+import { getUniqueCategories } from "@/lib/utils";
+
+interface optionsItem {
+  value: string;
+  name: string;
+}
 
 const Home = () => {
   const {
@@ -17,30 +24,14 @@ const Home = () => {
     loadMoreRestaurants,
   } = useRestaurants();
 
-  const categories = [
-    { name: "Italian", value: "Italian" },
-    { name: "European", value: "European" },
-    { name: "Sushi", value: "Sushi" },
-    { name: "Japanese", value: "Japanese" },
-    { name: "French", value: "French" },
-    { name: "Bistro", value: "Bistro" },
-    { name: "Tacos", value: "Tacos" },
-    { name: "Mexican", value: "Mexican" },
-    { name: "Pasta", value: "Pasta" },
-    { name: "American", value: "American" },
-    { name: "Indian", value: "Indian" },
-    { name: "Spicy", value: "Spicy" },
-    { name: "Dim Sum", value: "Dim Sum" },
-    { name: "Chinese", value: "Chinese" },
-  ];
-
-  const priceList = [
-    { value: "$", name: "$" },
-    { value: "$$", name: "$$" },
-    { value: "$$$", name: "$$$" },
-    { value: "$$$$", name: "$$$$" },
-    { value: "$$$$$$", name: "$$$$$$" },
-  ];
+  const categories: optionsItem[] = getUniqueCategories(
+    data.restaurants,
+    "categories"
+  );
+  const priceList: optionsItem[] = getUniqueCategories(
+    data.restaurants,
+    "price_range"
+  );
 
   return (
     <div className="flex flex-col gap-10 py-10">
